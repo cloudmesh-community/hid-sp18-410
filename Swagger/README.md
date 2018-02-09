@@ -10,6 +10,11 @@ Built a Timestamp service that will provide following capabilities
 
 Basically i have implemented a TIMESTAMP object that takes full path name 
 as the input in the form of query parameter.
+The swagger code-gen generate the server stub code for us by taking the 
+time.yaml as input and gives us a nice foundation to develop the main logic.
+I have implemented main logic in the file timestamp_stub.py. I have tried to 
+uphold the best practices of API implementation by keeping the defination 
+encapsulated using a stub code.
 
 You can download the code from the repository and start playing around.
 
