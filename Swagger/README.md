@@ -1,8 +1,8 @@
 # Assignment: Cloud and Big Data Rest Service with Swagger
 
-Service Descprition
+### Service Descprition
 
-Built a Timestamp service that will provide following capabilities 
+*Built a Timestamp service that will provide following capabilities* 
 
 * Provide creation date and time
 * provide last modified date and time
@@ -12,13 +12,14 @@ Basically i have implemented a TIMESTAMP object that takes full path name
 as the input in the form of query parameter.
 The swagger code-gen generate the server stub code for us by taking the 
 time.yaml as input and gives us a nice foundation to develop the main logic.
-I have implemented main logic in the file timestamp_stub.py. I have tried to 
-uphold the best practices of API implementation by keeping the defination 
-encapsulated using a stub code.
+I have implemented main logic in the file *timestamp_stub.py*
+at location - https://github.com/cloudmesh-community/hid-sp18-410/tree/master/Swagger/flaskConnexion/swagger_server/controllers 
+I have tried to uphold the best practices of API implementation by keeping 
+the defination encapsulated using a stub code.
 
 You can download the code from the repository and start playing around.
 
-Follow the below steps
+### Follow the below steps
 
 * Clone the repository
 * Navigate to "flaskConnexion" directory 
@@ -28,13 +29,13 @@ You will see something like this
 Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
 
 
-Running the service from browser
+### Running the service from browser
 
 * Open any browser and request the url with fullyqualified file name
 
-* Example1
+#### Example 1
 	http://localhost:8080/api/timestamp?path=/home/algo.txt
-Result - 
+#### Result - 
 
 {
   "Timestamp": {
@@ -44,11 +45,11 @@ Result -
   }
 }
 
-* Example2
+#### Example 2
 	
 	http://localhost:8080/api/timestamp?path=/home/karan/std.py
 
-Result -
+#### Result -
 
 {
   "Timestamp": {
