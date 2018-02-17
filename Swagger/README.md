@@ -13,7 +13,7 @@ as the input in the form of query parameter.
 The swagger code-gen generate the server stub code for us by taking the 
 time.yaml as input and gives us a nice foundation to develop the main logic.
 I have implemented main logic in the file *timestamp_stub.py*
-at location - https://github.com/cloudmesh-community/hid-sp18-410/tree/master/Swagger/flaskConnexion/swagger_server/controllers 
+at location - https://github.com/cloudmesh-community/hid-sp18-410/tree/master/Swagger/flaskConnexion/swagger_server/controllers. 
 I have tried to uphold the best practices of API implementation by keeping 
 the defination encapsulated using a stub code.
 
