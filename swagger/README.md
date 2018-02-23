@@ -37,13 +37,13 @@ Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
 	http://localhost:8080/api/timestamp?path=/home/algo.txt
 #### Result - 
 
-{
+`{
   "Timestamp": {
     "accessed_time": "Fri Feb  9 01:35:56 2018",
     "creation_time": "Wed Sep 20 22:40:24 2017",
     "modified_time": "Wed Sep 20 22:40:24 2017"
   }
-}
+}`
 
 #### Example 2
 	
@@ -51,10 +51,10 @@ Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
 
 #### Result -
 
-{
+`{
   "Timestamp": {
     "accessed_time": "Wed Feb  7 21:53:02 2018",
     "creation_time": "Wed Feb  7 22:13:40 2018",
     "modified_time": "Wed Feb  7 22:13:40 2018"
   }
-}
+}`
