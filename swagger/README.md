@@ -19,14 +19,14 @@ the defination encapsulated using a stub code.
 
 You can download the code from the repository and start playing around.
 
-### Follow the below steps
+### The steps are as follows
 
 * Clone the repository
 * Navigate to "flaskConnexion" directory 
 * start the service by executing the command "python -m swagger_server"
 
 You will see something like this 
-Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 
 
 ### Running the service from browser
