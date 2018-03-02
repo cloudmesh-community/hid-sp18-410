@@ -1,4 +1,4 @@
-#Implementing Swagger service on a Docker container
+# Implementing Swagger service on a Docker container
 
 ## Goal - To implement timestamp service on docker container
 ## Assumption - Docker already installed on the Host OS
