@@ -24,7 +24,7 @@ endif
 #	make -f Makefile check >> report-latex.log 2>&1
 
 all:
-	cp ../../hid-sample/paper/Makefile .
+	#cp ../../hid-sample/paper/Makefile .
 	make -f Makefile generate
 
 generate: clean iureport
@@ -34,8 +34,8 @@ generate: clean iureport
 	$(LATEX) ${FLAGS} ${FILE}
 
 iureport:
-	cp ../../hid-sample/tex/format/iureport.cls .
-	cp ../../hid-sample/tex/format/ACM-Reference-Format.bst .
+	cp ../tex/format/iureport.cls .
+	cp ../tex/format/ACM-Reference-Format.bst .
 
 check:
 	chktex -q -n 13 -n 8 content.tex
