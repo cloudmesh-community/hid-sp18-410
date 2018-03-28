@@ -34,8 +34,8 @@ generate: clean iureport
 	$(LATEX) ${FLAGS} ${FILE}
 
 iureport:
-	cp ../tex/format/iureport.cls .
-	cp ../tex/format/ACM-Reference-Format.bst .
+	cp ../../hid-sample/tex/format/iureport.cls .
+	cp ../../hid-sample/tex/format/ACM-Reference-Format.bst .
 
 check:
 	chktex -q -n 13 -n 8 content.tex
