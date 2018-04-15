@@ -52,7 +52,7 @@ service: dest
 	rm *.jar
 	pip install --upgrade pip
 
-	cp -r $(DESTDIR) $(DESTDIR)/swagger_server/controllers
+	cp -r *.py $(DESTDIR)/swagger_server/controllers
 	cd $(TIMEDIR) && pip install -r requirements.txt && python setup.py install
 	
 	cd $(DESTDIR) && pip install -r requirements.txt && \
