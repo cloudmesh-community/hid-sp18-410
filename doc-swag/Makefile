@@ -54,6 +54,7 @@ service: dest
 
 	cp -r *.py $(DESTDIR)/swagger_server/controllers
 	cp timestamp.py $(DESTDIR)/swagger_server/models
+	cp base_model_.py $(DESTDIR)/swagger_server/models
 	cd $(TIMEDIR) && pip install -r requirements.txt && python setup.py install
 	
 	cd $(DESTDIR) && pip install -r requirements.txt && \
