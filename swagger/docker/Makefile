@@ -55,6 +55,7 @@ service: dest
 	cp -r *.py $(DESTDIR)/swagger_server/controllers
 	cp timestamp.py $(DESTDIR)/swagger_server/models
 	cp base_model_.py $(DESTDIR)/swagger_server/models
+
 	cd $(TIMEDIR) && pip install -r requirements.txt && python setup.py install
 	
 	cd $(DESTDIR) && pip install -r requirements.txt && \
@@ -68,9 +69,9 @@ start:
 	cd $(DESTDIR) && python -m swagger_server
 
 test:
-	curl http://localhost:8080/api/timestamp?path=/home/algo.txt
+	curl http://localhost:8080/api/timestamp?path=/home
 
-	#curl http://localhost:8080/cloudmesh/nlp/pos/Tim%20Cook%20is%20the%20CEO%20of%20Apple.
+	curl http://localhost:8080/api/timestamp?path=/home/algo2.py
             
 stop:
 	@echo "stopping the service"
