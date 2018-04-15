@@ -6,9 +6,9 @@ RUN apt-get update -q && apt-get install -qy \
     build-essential \
     python-dev \
     python-pip \
-    libssl-dev \
+    #libssl-dev \
     zlib1g-dev \
-    libbz2-dev \
+    #libbz2-dev \
     libreadline-dev \
     libsqlite3-dev \
     pandoc \
