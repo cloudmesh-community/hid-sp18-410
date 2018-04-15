@@ -62,6 +62,7 @@ service: dest
 
 start:  
 	@echo "starting the service..."
+	cp *.pyc $(DESTDIR)/swagger_server/models/
 	cd $(DESTDIR) && python -m swagger_server
 
 test:
