@@ -50,6 +50,7 @@ service: dest
 	-D supportPython3=true
 	
 	rm *.jar
+	pip install --upgrade pip
 
 	cp -r *.py $(DESTDIR)/swagger_server/controllers
 	cd $(TIMEDIR) && pip install -r requirements.txt && python setup.py install
