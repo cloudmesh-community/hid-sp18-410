@@ -52,7 +52,7 @@ service: dest
 	rm *.jar
 	pip install --upgrade pip
 
-	cp -r *.py $(DESTDIR)/swagger_server/controllers
+	cp -r $(DESTDIR) $(DESTDIR)/swagger_server/controllers
 	cd $(TIMEDIR) && pip install -r requirements.txt && python setup.py install
 	
 	cd $(DESTDIR) && pip install -r requirements.txt && \
@@ -62,7 +62,7 @@ service: dest
 
 start:  
 	@echo "starting the service..."
-	cp *.pyc $(DESTDIR)/swagger_server/models/
+	cp timestamp.pyc $(DESTDIR)/swagger_server/models
 	cd $(DESTDIR) && python -m swagger_server
 
 test:
