@@ -34,10 +34,10 @@ Thanks to Pathan, Shagufta for giving us a starting point in implementing this s
 	- make docker-clean -- stops the container and remove the image
   
 * Test the service :
-  
+  Include the file parameter in test section for example - `localhost:8080/api/timestamp?path=/home/<filename>`
   Please make sure to run the following command in a seperate terminal after running `make docker-all`
   
-  - make docker test -- curl for the timestamp details
+  	make docker test -- curl for the timestamp details
 
 
     
