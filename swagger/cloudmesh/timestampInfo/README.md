@@ -16,7 +16,7 @@ Thanks to Pathan, Shagufta for giving us a starting point in implementing this s
 
 * navigate to the directory 
 
-        cd /hid-sp18-410/swagger/docker/
+        cd /hid-sp18-410/swagger/cloudmesh/timestampInfo
 
 
 * Using docker to run the Timestamp swagger service :
@@ -46,15 +46,15 @@ Thanks to Pathan, Shagufta for giving us a starting point in implementing this s
     
  * The yaml file is located at 
 
-        hid-sp18-410/swagger/docker/time.yaml
+        hid-sp18-410/swagger/cloudmesh/timestampInfo/time.yaml
     
 * The default_controller is at 
 
-        hid-sp18-410/swagger/docker/default_controller.py
+        hid-sp18-410/swagger/cloudmesh/timestampInfo/default_controller.py
     
 * The timestamp related modules (which are used in the default_controller.py) are located at 
 
-		hid-sp18-410/swagger/docker/
+		hid-sp18-410/swagger/cloudmesh/timestampInfo/
 
 * To install these modules alone, please cd to the above directory and run:
 		

@@ -26,7 +26,7 @@ RUN apt-get update -q && apt-get install -qy \
 
 RUN git clone https://github.com/cloudmesh-community/hid-sp18-410.git
 
-WORKDIR /hid-sp18-410/doc-swag
+WORKDIR /hid-sp18-410/swagger/cloudmesh/timestampInfo
 
 RUN wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
 
